@@ -1,19 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MeepoCoreServiceModule } from 'meepo-core';
-
-import "rxjs/add/operator/combineLatest";
-import "rxjs/add/operator/filter";
-import "rxjs/add/operator/map";
-
 import { StoreService } from './store';
+import { StoreDirective } from './store-directive/store-directive';
 @NgModule({
-    declarations: [],
-    imports: [
-        CommonModule,
-        MeepoCoreServiceModule
+    declarations: [
+        StoreDirective
     ],
-    exports: [],
+    imports: [
+        CommonModule
+    ],
+    exports: [
+        StoreDirective
+    ],
     providers: [
         StoreService
     ],

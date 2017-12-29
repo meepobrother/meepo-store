@@ -1,7 +1,7 @@
 {
-    "name": "meepo-runner",
+    "name": "meepo-store",
     "version": "1.0.0",
-    "description": "runner for angular",
+    "description": "store for angular",
     "main": "./bundles/meepo.umd.js",
     "module": "./esm5/meepo.js",
     "es2015": "./esm2015/meepo.js",
@@ -18,15 +18,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/meepobrother/meepo-runner.git"
+        "url": "git+https://github.com/meepobrother/meepo-store.git"
     },
     "keywords": [],
     "author": "imeepos",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/meepobrother/meepo-runner/issues"
+        "url": "https://github.com/meepobrother/meepo-store/issues"
     },
-    "homepage": "https://github.com/meepobrother/meepo-runner/README.md",
+    "homepage": "https://github.com/meepobrother/meepo-store/README.md",
     "devDependencies": {
         "@angular/cli": "^1.6.1",
         "@angular/compiler": "5.2.0-beta.1",
@@ -35,7 +35,6 @@
         "@types/node": "^8.5.1",
         "less": "^2.7.3",
         "node-sass": "^4.7.2",
-        "pm2": "^2.9.1",
         "rollup": "^0.52.1",
         "rollup-plugin-node-resolve": "^3.0.0",
         "rollup-plugin-replace": "^2.0.0",
@@ -47,12 +46,9 @@
     "dependencies": {
         "@angular/common": "5.2.0-beta.1",
         "@angular/core": "5.2.0-beta.1",
-        "@angular/forms": "5.2.0-beta.1",
         "@angular/platform-browser": "5.2.0-beta.1",
-        "meepo-core": "^3.1.1",
         "reflect-metadata": "^0.1.10",
         "rxjs": "^5.5.5",
-        "wepayui": "^0.1.8",
         "zone.js": "0.8.4"
     }
 }

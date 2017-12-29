@@ -10,7 +10,7 @@ import { StoreService } from '../../src/app/app';
 })
 export class AppComponent implements OnInit {
   title = 'app';
-
+  id: string = 'imeepos';
   constructor(
     public store: StoreService
   ) {

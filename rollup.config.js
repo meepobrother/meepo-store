@@ -251,7 +251,7 @@ switch (target) {
 
 export default {
     exports: 'named',
-    name: 'meepo-runner',
+    name: 'meepo-store',
     plugins,
     external: Object.keys(globals),
     globals,
