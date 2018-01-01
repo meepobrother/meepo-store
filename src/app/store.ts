@@ -22,8 +22,8 @@ export class StoreService {
         localStorage.setItem(key, JSON.stringify(value));
     }
 
-    getList(key: string, page: number = 1, psize: number = 10) {
-        let items: any[] = this.get(key, []);
+    getList<T>(key: string, page: number = 1, psize: number = 10): T[] {
+        let items: T[] = this.get(key, []);
         return items.splice((page - 1) * psize, psize);
     }
 
