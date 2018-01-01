@@ -10,7 +10,9 @@ export class StoreService {
     constructor() { }
 
     get<T>(key: string, def: any): T {
-        return JSON.parse(localStorage.getItem(key));
+        let item = localStorage.getItem(key);
+        item = item || def;
+        return JSON.parse(item);
     }
 
     set(key: string, value: any): void {
