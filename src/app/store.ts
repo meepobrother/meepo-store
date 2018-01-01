@@ -11,8 +11,11 @@ export class StoreService {
 
     get<T>(key: string, def: any): T {
         let item = localStorage.getItem(key);
-        item = item || def;
-        return JSON.parse(item);
+        if (item) {
+            return JSON.parse(item);
+        } else {
+            return def;
+        }
     }
 
     set(key: string, value: any): void {
