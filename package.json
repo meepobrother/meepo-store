@@ -1,6 +1,6 @@
 {
     "name": "meepo-store",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "description": "store for angular",
     "main": "./bundles/meepo.umd.js",
     "module": "./esm5/meepo.js",
@@ -50,6 +50,7 @@
         "zone.js": "0.8.4"
     },
     "dependencies": {
+        "@angular/forms": "^5.2.0",
         "angular-web-storage": "^2.0.0"
     }
 }
