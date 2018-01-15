@@ -32,7 +32,7 @@ export class StoreDirective implements OnInit {
 
     ngOnInit() {
         if (this.isTextInput(this.ele.nativeElement)) {
-            this.ele.nativeElement.value = this._store.get(this.store, '')
+            this.ele.nativeElement.value = this._store.get(this.store)
         }
     }
 }
