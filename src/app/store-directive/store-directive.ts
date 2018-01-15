@@ -19,6 +19,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 })
 export class StoreDirective implements ControlValueAccessor, OnDestroy, OnInit {
     @Input() store: string;
+
     _model: any;
     set model(val) {
         this._model = val;
@@ -67,7 +68,6 @@ export class StoreDirective implements ControlValueAccessor, OnDestroy, OnInit {
     }
 
     registerOnTouched(fn: any) { }
-
 
     isTextInput(ele: any) {
         return !!ele &&
