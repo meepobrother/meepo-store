@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+
 import { StoreService } from './store';
 import { StoreDirective } from './store-directive/store-directive';
 
@@ -8,7 +10,8 @@ import { StoreDirective } from './store-directive/store-directive';
         StoreDirective
     ],
     imports: [
-        CommonModule
+        CommonModule,
+        ReactiveFormsModule
     ],
     exports: [
         StoreDirective
