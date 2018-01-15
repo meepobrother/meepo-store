@@ -26,5 +26,8 @@ import { LocalStorageService, SessionStorageService, LocalStorage, SessionStorag
 
 ```ts
 import { StoreService } from 'meepo-store';
+StoreService.get(key)
+StoreService.set(key,data)
+StoreService.getList(key,page,psize)
 ```
 
