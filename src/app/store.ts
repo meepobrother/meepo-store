@@ -1,8 +1,5 @@
 import { Injectable } from '@angular/core';
-import {
-    LocalStorageService, SessionStorageService,
-    LocalStorage, SessionStorage
-} from 'angular-web-storage';
+import { LocalStorageService } from 'angular-web-storage';
 
 @Injectable()
 export class StoreService extends LocalStorageService {
